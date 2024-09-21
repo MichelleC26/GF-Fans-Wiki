@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+    background-size: cover;
+}
+
+
+.inicio{
+    background-color: #e8c47bf1;
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+}
+.ini{
+    padding: 0px;
+    margin-top: -97px;
+    display: flex;
+    justify-content: flex-end;
+}
+.sim{
+    height: 80px;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pestañas{
+    background-color: #a58c59c4;
+    padding: 5px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.indice{
+    font-family: "Macondo", system-ui;
+    font-size: 150%;
+    background-color: #c0a57098;
+    border: transparent;
+    color: brown;
+    font-weight: bold;
+}
+
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+--- #character-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.character-card {
+    background-color: #fff8dc;
+    border: 2px solid #f1e2c4;
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.character-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.character-card h3 {
+    background-color: #4a3f29;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+.character-card p {
+    margin: 10px;
+}
+
+.character-card {
+
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#toggle-button {
+    padding: 10px 27px; /* Aumentar tamaño del botón */
+    font-size: 22px; /* Aumentar tamaño del texto */
+    font-family: 'Macondo', cursive;
+    background-color: #8f0f27d2;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Añadir bordes redondeados si lo deseas */
+ }
+ 
+ #toggle-button:hover {
+    background-color: #c6a700;
+    transform: scale(1.05); /* Efecto de agrandado al pasar el mouse */
+ }
+
+/* Estilo para el fondo por defecto (Gravity Falls) */
+body.gravity-falls {
+    background-image: url('../img/FONDO.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo para el fondo del Armagedón */
+body.armagedon {
+    background-image: url('../img/FONDO2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Posiciona los botones al final, hacia la derecha */
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-family: 'Macondo', cursive;
+    background-color: #f8d210;
+    border: none;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: #c6a700;
+}
+
+@media (max-width: 768px){
+    .pestañas{
+        background-color: #a58c59c4;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    --- #character-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+}

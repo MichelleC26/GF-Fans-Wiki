@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes</title>
+    <link rel="stylesheet" href="personajes.css">
+    <link rel="icon" href="../img/icono.png" type="image/png">
+    <script type="module" src="personajes.js"></script>
+</head>
+<body>
+    <!-- inicio de Headear -->
+    <header >
+        <section class="inicio">
+            <figure class="logo">
+                <a href="../inicio/sipnosis.html"><img src="../img/logo.png" class="logo" ></a>
+            </figure>
+        </section>
+            <figure class="ini">
+                <a href="../index.html"><img src="../img/simbolos.png" class="sim"></a>
+            </figure>
+        <nav class="pestañas">
+            <input type="button" value="Inicio" class="indice" src="./sipnosis.html">
+            <input type="button" value="Personajes" class="indice" src="../personajes/personajes.html">
+            <input type="button" value="Episodios" class="indice" id="episodios" src="../episodios/episodios.html" >
+            <input type="button" value="Extras" class="indice" src="../extras/extras.html">
+            <input type="button" value="Merchandising" class="indice" src="../tienda/tienda.html">
+            <input type="button" value="Estadisticas" class="indice" src="../estadisticas/estadisticas.html">
+        </nav>
+    </header>
+<!-- Fin de Headear -->
+    
+<main></main>
+    <div class="button-container">
+       <button id="sort-az-button">Ordenar de A a Z</button>
+       <button id="sort-za-button">Ordenar de Z a A</button>
+    </div>
+
+    <main>
+        <button id="toggle-button" >Mostrar Personajes de Raromagedón</button>
+          
+          <div id="character-container" class="flex">
+              <!-- Las tarjetas de los personajes se añadirán aqui y la info en JavaScript -->
+          </div>
+    </main>
+
+</body>
+</html>

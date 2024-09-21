@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+    background-size: cover;
+}
+
+
+.inicio{
+    background-color: #e8c47bf1;
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+}
+.ini{
+    padding: 0px;
+    margin-top: -97px;
+    display: flex;
+    justify-content: flex-end;
+}
+.sim{
+    height: 80px;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pestañas{
+    background-color: #a58c59c4;
+    padding: 5px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.indice{
+    font-family: "Macondo", system-ui;
+    font-size: 150%;
+    background-color: #c0a57098;
+    border: transparent;
+    color: brown;
+    font-weight: bold;
+}
+
+/* Estilos para el contenido */
+
+.contenido{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Informacion Cuerpo */
+
+.portada{
+    height: 550px;
+    margin: 35px 50px 0px ;
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+.info {
+        background-color: #D5B59C;
+        padding: 2.5px;
+        width: 830px;
+        height: 330px;
+        margin-top: -425px;
+        margin-left: 450px;
+        line-height: 1.3;
+    }
+    
+h2{
+        font-family: "Permanent Marker", cursive;
+        font-size: 250%;
+    }
+    
+p{
+        font-family: "Special Elite", system-ui;
+        font-size: 130%;
+        text-wrap: wrap;
+}
+
+.info-1{
+    background-color: #D5B59C;
+    padding: 2px;
+    margin-top: 130px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 1230px;
+    line-height: 1.3;
+}
+  
+@media (max-width: 768px) {
+    .pestañas{
+        background-color: #a58c59c4;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .portada{
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        align-items: center; /* Centra el contenido verticalmente, si es necesario */
+        margin: 15px auto;
+    }
+    .info, .info-1 {
+        width: 97%; /* Cambia el ancho del contenedor para pantallas pequeñas */
+        margin: 5px; /* Centra el contenedor en pantallas pequeñas */
+        height: auto; /* Ajusta la altura según el contenido */
+    }
+    }
+
+    h2 {
+        font-size: 150%; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    p {
+        font-size: 120%; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+}    
+    
+
+

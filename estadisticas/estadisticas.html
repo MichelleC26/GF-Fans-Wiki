@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estadisticas.css">
+    <link rel="icon" href="../img/icono.png" type="image/png">
+    <script type="module" src="estadisticas.js"></script>
+    <title>Estadisticas</title>
+</head>
+<body>
+    <!-- inicio de Headear -->
+    <header >
+        <section class="inicio">
+            <figure class="logo">
+                <a href="../inicio/sipnosis.html"><img src="../img/logo.png" class="logo" ></a>
+            </figure>
+        </section>
+            <figure class="ini">
+                <a href="../index.html"><img src="../img/simbolos.png" class="sim"></a>
+            </figure>
+        <nav class="pestañas">
+            <input type="button" value="Inicio" class="indice" src="./sipnosis.html">
+            <input type="button" value="Personajes" class="indice" src="../personajes/personajes.html">
+            <input type="button" value="Episodios" class="indice" id="episodios" src="../episodios/episodios.html" >
+            <input type="button" value="Extras" class="indice" src="../extras/extras.html">
+            <input type="button" value="Merchandising" class="indice" src="../tienda/tienda.html">
+            <input type="button" value="Estadisticas" class="indice" src="../estadisticas/estadisticas.html">
+        </nav>
+    </header>
+<!-- Fin de Headear -->
+<h1>Estadísticas de Gravity Falls</h1>
+    
+<!-- Gráfico por temporadas -->
+<div class="chart-container" id="seasonChartContainer">
+  <canvas id="seasonChart" width="400" height="200"></canvas>
+</div>
+
+<!-- Gráfico por episodios (ajustado en tamaño) -->
+<div class="chart-container" id="episodeChartContainer" style="display:none;">
+  <canvas id="episodeChart" width="600" height="400" class="estadistica"></canvas> 
+</div>
+
+ <!-- Botón para alternar entre gráficos -->
+ <button id="toggleButton" class="toggleButton">Ver estadísticas por episodios</button>
+
+
+<div>
+    <img src="../img/Foto de Michelle.jpg" class="propaganda">
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>

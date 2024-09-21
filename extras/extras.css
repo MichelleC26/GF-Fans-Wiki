@@ -1,0 +1,222 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/cabaña_fondo02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+    background-size: cover;
+}
+
+
+.inicio{
+    background-color: #e8c47bf1;
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+}
+.ini{
+    padding: 0px;
+    margin-top: -97px;
+    display: flex;
+    justify-content: flex-end;
+}
+.sim{
+    height: 80px;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pestañas{
+    background-color: #a58c59c4;
+    padding: 5px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.indice{
+    font-family: "Macondo", system-ui;
+    font-size: 150%;
+    background-color: #c0a57098;
+    border: transparent;
+    color: brown;
+    font-weight: bold;
+}
+
+/* Estilo de contenido */
+
+h1 {
+    margin: 0;
+    font-family: "Macondo", system-ui;
+    color: beige;
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #f3ebeb;
+    padding-bottom: 0.5rem;
+    font-family: "Permanent Marker", cursive;
+    color: #ebad32de;
+}
+
+.h3{
+    font-family: "Special Elite", system-ui;
+}
+
+.cortos01 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #559ae9a8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen del episodio */
+.cortos01 img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/* Información del episodio */
+.cortos-info {
+    flex: 1;
+}
+
+/* Efecto de elevación al pasar el mouse */
+.cortos01:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.cortos img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.cortos-info {
+    max-width: 600px;
+}
+
+.cortos-info h3 {
+    margin: 0 0 0.5rem;
+}
+
+.cortos-info p {
+    margin: 0;
+}
+
+.cortos02 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #f07faabd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cortos02:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);}
+
+.cortos02 img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.cortos03 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #7ff097bd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+.cortos03:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);}
+
+.cortos03 img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.cortos04 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #eef07fbd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cortos04:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.479);}
+.cortos04 img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    .pestañas{
+        background-color: #a58c59c4;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+}
