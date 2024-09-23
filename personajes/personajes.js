@@ -360,7 +360,7 @@ const gravityFallsCharacters = [
         age: 'Millones',
         role:'Demonio raro',
     description: 'Es uno de los demonios provenientes de la dimensión provocada por la ruptura destruida. Junto con los demás amigos de Bill Clave, es traído al mundo con el propósito de causar desastre en el Raromagedón.',
-    img:'../img/kryptos.webp'
+    img:'../img/Kryptos.jpg'
     },
 
     {

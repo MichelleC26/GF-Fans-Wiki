@@ -135,3 +135,47 @@ h1 {
     }
     
 }
+
+@media only screen and (max-width: 767px) and (min-height: 480px){
+    .toggleButton {
+        padding: 10px 27px; /* Aumentar tamaño del botón */
+        font-size: 22px; /* Aumentar tamaño del texto */
+        font-family: 'Macondo', cursive;
+        background-color: #f8ae0dd2;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border-radius: 10px; /* Añadir bordes redondeados si lo deseas */
+     }
+     
+    .toggleButton:hover {
+        background-color: #c6a700;
+        transform: scale(1.05); /* Efecto de agrandado al pasar el mouse */
+     }
+    
+    .propaganda{
+        height: 500px;
+        display: flex;
+    }
+    
+    .estadistica{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        color: #ffff;
+        font-family: "Macondo", system-ui;
+    }
+    
+    .chart-container {
+        width: 90%; /* Aumentar el ancho al 90% */
+        max-width: 800px; /* Aumentar el máximo a 800px */
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+}

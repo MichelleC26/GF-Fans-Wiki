@@ -1,6 +1,6 @@
 
 document.querySelector('input[value="Inicio"]').addEventListener('click', function() {
-    window.location.href = "./sipnosis.html";
+    window.location.href = "../inicio/sipnosis.html";
 });
 
 document.querySelector('input[value="Personajes"]').addEventListener('click', function() {

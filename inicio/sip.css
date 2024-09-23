@@ -149,8 +149,7 @@ p{
         margin: 5px; /* Centra el contenedor en pantallas pequeñas */
         height: auto; /* Ajusta la altura según el contenido */
     }
-    }
-
+    
     h2 {
         font-size: 150%; /* Ajusta el tamaño del texto para pantallas pequeñas */
     }
@@ -158,7 +157,70 @@ p{
     p {
         font-size: 120%; /* Ajusta el tamaño del texto para pantallas pequeñas */
     }
-}    
+}  
     
 
+@media only screen and (max-width: 767px) {
 
+    .pestañas{
+        background-color: #a58c59c4;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .portada{
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        align-items: center; /* Centra el contenido verticalmente, si es necesario */
+        margin: 15px auto;
+    }
+    .info, .info-1 {
+        width: 97%; /* Cambia el ancho del contenedor para pantallas pequeñas */
+        margin: 5px; /* Centra el contenedor en pantallas pequeñas */
+        height: auto; /* Ajusta la altura según el contenido */
+    }
+    
+    h2 {
+        font-size: 150%; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    p {
+        font-size: 120%; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-height: 480px){
+    .pestañas{
+        background-color: #a58c59c4;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .portada{
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        align-items: center; /* Centra el contenido verticalmente, si es necesario */
+        margin: 15px auto;
+    }
+    .info, .info-1 {
+        width: 97%; /* Cambia el ancho del contenedor para pantallas pequeñas */
+        margin: 5px; /* Centra el contenedor en pantallas pequeñas */
+        height: auto; /* Ajusta la altura según el contenido */
+    }
+    
+    h2 {
+        font-size: 150%; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    p {
+        font-size: 120%; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+}
